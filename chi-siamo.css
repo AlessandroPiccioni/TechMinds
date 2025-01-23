@@ -190,3 +190,35 @@ body{
 p>a{
     color: aqua;
 }
+
+footer{
+    background-color: rgb(27, 27, 27);
+    bottom: 0px;
+    text-align: center;
+    left: 0;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+    min-height: calc(100vh+100000px);
+}
+
+footer>div{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+    height: 80px;
+
+}
+
+footer>div>div{
+    flex: 1;
+    padding: 20px;
+}
+
+.text-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 15px;
+}
