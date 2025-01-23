@@ -1,20 +1,9 @@
-.dm-serif-text-regular {
-    font-family: "DM Serif Text", serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
-  .dm-serif-text-regular-italic {
-    font-family: "DM Serif Text", serif;
-    font-weight: 400;
-    font-style: italic;
-  }
-  
-
+*{
+    font-family: "DM Sans", serif;
+}
 body{
     background-color: #003A89;
     color: #ffffff;
-    height: 100vh;
 }
 
 .header-container {
@@ -29,6 +18,7 @@ body{
     padding: 10px 20px;
     border-bottom: 1px solid white;
     margin-bottom: 100px;
+    
 }
 
 .header-container-left {
@@ -193,11 +183,10 @@ p>a{
 
 footer{
     background-color: rgb(27, 27, 27);
-    bottom: 0px;
+    bottom: 10px;
     text-align: center;
     left: 0;
-    bottom: 0;
-    height: 100px;
+    height: 140px;
     width: 100%;
     min-height: calc(100vh+100000px);
 }
