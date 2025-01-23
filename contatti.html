@@ -1,55 +1,27 @@
 <!DOCTYPE html>
 <html>
 <head>
-   
     <title>Contatti</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            background-color: #03d4ff;
+            color: white;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
 
-</head>
-  <!-- Intestazione -->
-  <header>
-    <div class="header-container reset">
-        <div class="header-container-right">
-            <img src="Logo.jpg" alt="Mia Immagine" class="logo">
-            <h1 style="margin-left: -15px;">TechMinds</h1>
-            <ul class="menu">
-                <li><button class="button" type="button">CHI SIAMO</button></li>
-                <li><button class="button" type="button">SERVIZI</button></li>
-                <li><button class="button"type="button">CONTATTI</button></li>
-            </ul>
-        </div>
-        <div class="header-container-left">
-            <img src="Logo1.png" alt="Mia Immagine" class="logo">
-            <input class="search" type="search" autocomplete="on" placeholder="Cerca..." name="keyword" required maxlength="50">
-        </div>
-    </div>
-  </header>
-
-<style>
-    
-body{
-    
-    background-color: #03d4ff;
-    color: white;
-    height: 100vh;
-    margin: 0;
-    font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-        
-}
-
-.header-container {
-    background-color: #003A89;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    /*allinea gli elementi della stessa gerarchia in modo flessibile */
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    border-bottom: 1px solid white;
+        .header-container {
+            background-color: #003A89;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            border-bottom: 1px solid white;
     margin-bottom: 100px;
 }
 
@@ -58,45 +30,46 @@ body{
     align-items: center;
     /*Aggiunge uno spazio di 20px tra gli elementi della stessa gerarchia*/
     gap: 20px;
-}
+        }
 
-.header-container-right {
-    display: flex;
-    align-items: center;
-    gap: 0.5px;
+        .header-container-right {
+            display: flex;
+            align-items: center;
+            gap: 0.5px;
+        }
+        header + header {
+    margin-top: 120px; /* Altezza dell'header */
 }
-
-.logo {
-    width: 100px;
-    height: 100px;
-}
-
-.menu {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    margin-left: 15px;
-}
-
-.menu li {
-    margin-right: 10px;
-}
-
-button {    
-    background-color: #003A89;
-    cursor: pointer;
-    border: 0;
-    padding: 5px 10px;
-    margin-top: 8px;
-}
-
 .search {
     border-radius: 10px;
     width: 300px;
     padding: 6px;
     margin-left: -25px;
     margin-right: 15px;
+}
+        .logo {
+            width: 100px;
+            height: 100px;
+        }
+
+        .menu {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            margin-left: 15px;
+        }
+
+        .menu li {
+            margin-right: 10px;
+        }
+
+        button {
+            background-color: white;
+            cursor: pointer;
+            border: 0;
+            padding: 5px 10px;
+            margin-top: 8px;
 }
 
 
@@ -107,19 +80,28 @@ button {
     /* mantiene le proporzioni*/
     object-fit: cover; 
     margin: 0 auto 20px; 
-}
-
-.contatti {
+        }
+        contatti {
             text-align: center;
             max-width: 800px;
             margin: auto;
-        font-size: 2rem;
-        color: white;
-        margin-bottom: 20px;
-         font-size: 1.2rem;
-         color: white;
-         margin-bottom: 30px;
         }
+
+        h2 {
+            font-size: 4rem;
+            color: #ffffff;
+            margin-bottom: 20px;
+            margin: 60px;
+            
+        }
+
+        p {
+            font-size: 1.2rem;
+            color: white;
+            margin-bottom: 30px;
+            margin: 70px;
+        }
+
 .form {
     display: flex;
     max-width: 900px;
@@ -127,53 +109,77 @@ button {
     padding: 10px;
     border-radius: 10px;  
     box-shadow: 0 8px;
-}
- 
+        }
         .contact-form {
             display: flex;
             flex-direction: column;
             align-items: center;
-            background: #0056B3;
+            background: #03d4ff;
             padding: 30px;
             border-radius: 10px;
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 8px 16px rgba (0,0,0,0.2);
             width: 100%;
             max-width: 400px;
             margin: auto;
         }
 
+
         .form {
             width: 100%;
-            margin-bottom: 30px;
+            margin-bottom: 20px;
             text-align: left;
         }
 
-        .form label {
-            display: block;
-            margin-bottom: 8px;
-            font-size: 1rem;
-            font-weight: bold;
-            color: #ffffff;
-        }
+        .contact-form label {
+    display: block; /* Posiziona la label sopra il campo */
+    margin-bottom: 8px; /* Spaziatura tra label e campo */
+    font-size: 1rem; /* Dimensione del testo */
+    font-weight: bold; /* Grassetto */
+    color: #ffffff; /* Testo bianco */
+    text-shadow: 0 2px 4px rgba(254, 239, 239, 0.5); /* Ombra per il testo */
+}
+
+.contact-form input, 
+.contact-form textarea {
+    width: 100%; /* Adatta la larghezza */
+    padding: 12px; /* Aggiunge spazio interno */
+    border: 2px solid #7FC8F8; /* Bordo celestino */
+    border-radius: 6px; /* Arrotonda i bordi */
+    font-size: 1rem; /* Dimensione del testo */
+    margin-bottom: 20px; /* Spaziatura tra i campi */
+    background-color: #ffffff; /* Sfondo bianco */
+    color: #003A89; /* Testo scuro */
+    font-weight: bold; /* Grassetto per il testo */
+    box-shadow: 
+        0 17px 19px rgb(0, 57, 137), /* Ombra primaria, come una linea di contorno */
+        0 10px 10px rgb(255, 255, 255); /* Ombra diffusa e morbida */
+   
+}
+.contact-form input:focus, 
+.contact-form textarea:focus {
+    outline: none; /* Rimuove il bordo di focus predefinito */
+    border-color: #003A89; /* Cambia colore del bordo al focus */
+    box-shadow: 
+        0 4px 0 rgba(0, 58, 137, 0.5), 
+        0 10px 20px rgba(0, 58, 137, 0.4); /* Ombra più marcata al focus */
+}
 
         .form input, .form textarea {
             width: 100%;
             padding: 10px;
             border: none;
             border-radius: 5px;
-          
+            font-size: 1rem;
         }
 
-        .form input::placeholder,
-        .form textarea::placeholder {
-    position: absolute;
-    top: 0;
-    left: 0;
-    color: #555; /* Colore del testo placeholder */
-    font-size: 1rem;
-    padding: 10px; /* Distanza dal bordo */
-    pointer-events: none;
-}
+        .form textarea {
+            resize: none;
+        }
+
+
+        .form input::placeholder, .form textarea::placeholder {
+            color: #888;
+        }
 
 
         .button {
@@ -181,16 +187,19 @@ button {
             color: #003A89;
             padding: 10px 20px;
             border: none;
-            border-radius: 5px;
+            margin: center;
             font-size: 1rem;
             cursor: pointer;
-            
+            display: block; /* Imposta il display su block per margini centrati */
+    margin: 20px auto; /* Centra orizzontalmente il bottone */
+    text-align: center;
         }
         .button:hover {
             background-color: #f54600;
             color: #ffffff;
+            transition: background-color 0.3s ease;
         }
-         
+
         .fixed-logo {
             position: fixed;
             bottom: 20px; /* Distanza dal fondo della pagina */
@@ -199,35 +208,82 @@ button {
             height: auto; /* Mantiene proporzioni */
             z-index: 1000; /* Mantiene il logo sopra gli altri contenuti */
         }
+        .contact-icons {
+    text-align: center;
+    margin-top: 20px; /* Sposta le icone verso il basso */
+}
+
+.contact-icons a {
+    color: white;
+    margin: 0 10px; 
+    font-size: 1.5rem; 
+    text-decoration: none;
+}
+.contact-icons a:hover {
+    color: orange; /
+}
+
       
 /*.footer {
    position: fixed;
    left: 0;
    bottom: 0;
    width: 100%;
-   background-color: #003A89;
-   color: white;
-   text-align: center;
-}
-     */
-</style>
-</header>
-<head>
+            background-color: #003A89;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
 <body>
+    <header class="header-container">
+        <div class="header-container-right">
+            <img src="Logo.jpg" alt="Logo" class="logo">
+            <h1 style="margin-left: -15px;">TechMinds</h1>
+            <ul class="menu">
+                <li><button class="button" type="button">CHI SIAMO</button></li>
+                <li><button class="button" type="button">SERVIZI</button></li>
+                <li><button class="button" type="button">CONTATTI</button></li>
+            </ul>
+        </div>
+        <div class="header-container-left">
+           <img src="Logo1.png" alt="Mia Immagine" class="logo">
+                <input class="search" type="search" autocomplete="on" placeholder="Cerca..." name="keyword" required maxlength="50">
+            </div>
+        </div>
+    </header>
+<header>
+    <h2>Contattaci</h2>
+     <p>Hai bisogno di aiuto? Compila il form qui sotto oppure contattaci sui nostri social.</p>
+    </header>
+    
+
     <section class="contatti">
-        <h2>Contattaci</h2>
-        <p>Hai bisogno di aiuto? Compila il form qui sotto.</p>
-        <div class="form">
-            <input type="text" id="nome" name="nome" placeholder="Nome" required>
+
+               
+        <div class="contact-form">
+            <form>
+    <label for="nome">Nome</label>
+    <input type="text" id="nome" name="nome" placeholder="Inserisci il tuo nome">
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" placeholder="Inserisci la tua email">
+    <label for="message">Messaggio</label>
+    <textarea id="message" name="message" placeholder="Scrivi qui il tuo messaggio" rows="5"></textarea>
+    <button type="submit" class="button">Invia</button>
+</form>
         </div>
-        <div class="form">
-            <input type="email" id="email" name="email" placeholder="Email" required>
+
+        <div class="contact-icons">
+            <a href="#" title="Facebook"><i class="fab fa-facebook"></i></a>
+            <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" title="Email"><i class="fas fa-envelope"></i></a>
         </div>
-        <div class="form">
-            <textarea id="message" name="message" placeholder="Messaggio" rows="5" required></textarea>
-        </div>        
-            <button type="submit" class="button">Invia</button>
-        </form>
     </section>
     <img src="Logo.jpg" alt="Logo" class="fixed-logo">
 </head>
