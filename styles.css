@@ -1,4 +1,9 @@
-
+html, body {
+    height: 100%;
+    margin: 0; /* Rimuove margini di default */
+    display: flex;
+    flex-direction: column; /* Dispone gli elementi in verticale */
+}
 body{
     background-color: #003A89;
     color: #ffffff;
@@ -89,9 +94,12 @@ button {
     width: 150px;
     height: auto;
 }
-main {/*cambiare stile nel main sfondo e padding*/
+main {
+    flex: 1; /* Occupa lo spazio disponibile tra header e footer */
     padding: 20px;
     background-image: url('immagini/foto4.png');
+    background-size: cover;
+    margin-bottom: 20px; /* Spazio tra il contenuto principale e il footer */
 }
 .servizi {/*mettere il testo in servizi al centro*/
     text-align: center;
@@ -106,26 +114,47 @@ main {/*cambiare stile nel main sfondo e padding*/
     margin-right: 10px;
     display: inline-block;
     width: 40%;
-    background-color: rgba(241, 221, 221, 0.135);
+    background-color: rgba(0, 0, 0, 0.498);
     border-radius: 10px;
 }
 .servizio h2 {/*stile per il titolo gdi ogni servizio dimezione,margine,colore*/
     font-size: 35px;
     margin: 10px;
-    color: #030809;
+    color: white;
 }
 .servizio p {
     font-size: 23px;
 }
 footer {
-    background-color: #003A89; /* Colore di sfondo del footer */
-    color:white; /* Colore del testo bianco */
+    background-color: rgb(27, 27, 27); /* Sfondo del footer */
+    color: white;
+    text-align: center;
     padding: 20px; /* Spaziatura interna */
-    font-size: 18px; /* Dimensione del testo */
-  
+    height: 120px; /* Altezza fissa del footer */
+    width: 100%; /* Larghezza del footer */
 }
-footer h4 {
-    margin: 10px 0; /* Spaziatura verticale tra le righe */
-    font-size: 20px; /* Dimensione del testo delle intestazioni */
-    font-weight: bold; /* Grassetto */
+footer>div{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+    height: 80px;
+}
+footer>div>div{
+    flex: 1;
+    padding: 20px;
+}
+.text-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 15px;
+}
+.icona {
+    font-size: 20px; 
+    transition: transform 0.3s ease, font-size 0.3s ease, color 0.3s ease;
+}
+.icona:hover {
+    transform: scale(1.2); 
+    color: #007bff; 
 }
