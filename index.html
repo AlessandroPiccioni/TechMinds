@@ -1,0 +1,76 @@
+
+<!--
+Struttura del sito:
+Home Page (index.html)
+
+Un'intestazione con il logo dell'azienda e un menu di navigazione.
+Un banner introduttivo con una breve descrizione dell'azienda.
+Un footer con informazioni di contatto rapide e link ai social.
+
+Nome impressa: TechMinds
+-->
+
+<html>
+<!DOCTYPE html>
+    <head>
+        <title>index.html</title>
+        <link rel="stylesheet" href="name.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    </head>
+    <body>
+
+    <!-- Intestazione -->
+    <header>
+        <div class="header-container reset">
+            <div class="header-container-right">
+                <img src="Logo.jpg" alt="Mia Immagine" class="logo">
+                <h1 style="margin-left: -15px;">TechMinds</h1>
+                <ul class="menu">
+                    <li><button class="button" type="button">CHI SIAMO</button></li>
+                    <li><button class="button" type="button">SERVIZI</button></li>
+                    <li><button class="button"type="button">CONTATTI</button></li>
+                </ul>
+            </div>
+            <div class="header-container-left">
+                <img src="Logo1.png" alt="Mia Immagine" class="logo">
+                <input class="search" type="search" autocomplete="on" placeholder="Cerca..." name="keyword" required maxlength="50">
+            </div>
+        </div>
+    </header>
+
+    <!-- Banner introduttivo -->
+     <div class="form">
+        <div class="container" style="Margin-top: 30px">
+            <img class="imgBanner" src="Consulenza.webp" alt="Mia Immagine">
+            <p class="pBanner">TechMinds, fondata a Roma, è un'azienda emergente nel panorama tecnologico, specializzata nella fornitura di soluzioni IT innovative. Con un focus sull'intelligenza artificiale, la trasformazione digitale e la consulenza tecnologica, l'azienda supporta le imprese nel migliorare l'efficienza e nell'adottare tecnologie avanzate per affrontare le sfide del mercato moderno. Con sede nella capitale italiana, TechMinds si impegna a combinare competenza tecnica e innovazione per offrire servizi personalizzati e scalabili, rispondendo alle esigenze di clienti in diversi settori industriali.</p>
+        </div>
+    </div>
+
+    <div>
+        <div>
+            <img src="tech.jpg" alt="Mia Immagine">
+        </div>
+        <div>
+            <img class="imgBanner" src="Consulenza.webp" alt="Mia Immagine">
+            <p class="pBanner">TechMinds, fondata a Roma, è un'azienda emergente nel panorama tecnologico, specializzata nella fornitura di soluzioni IT innovative. Con un focus sull'intelligenza artificiale, la trasformazione digitale e la consulenza tecnologica, l'azienda supporta le imprese nel migliorare l'efficienza e nell'adottare tecnologie avanzate per affrontare le sfide del mercato moderno. Con sede nella capitale italiana, TechMinds si impegna a combinare competenza tecnica e innovazione per offrire servizi personalizzati e scalabili, rispondendo alle esigenze di clienti in diversi settori industriali.</p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+        <footer style="margin-bottom: -7px">
+            <div>
+                <div>
+                    <div style="margin-bottom: -30px;">
+                        <h3>I nostri contatti</h3>
+                    </div>
+                    <div class="text-container">
+                        <p><i class="fa-solid fa-phone icona"></i> +33 333 3333</p>
+                        <p><i class="fa-solid fa-envelope-open icona"></i> ciao@gmail.com</p>
+                        <p><i class="fa-regular fa-map icona"></i> Via pppp, Paradise</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </body>
+</html>
