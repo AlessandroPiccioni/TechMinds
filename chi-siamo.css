@@ -222,3 +222,13 @@ footer>div>div{
     flex-direction: row;
     gap: 15px;
 }
+
+.icona {
+    font-size: 20px; 
+    transition: transform 0.3s ease, font-size 0.3s ease, color 0.3s ease;
+}
+
+.icona:hover {
+    transform: scale(1.2); 
+    color: #007bff; 
+}
