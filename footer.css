@@ -1,0 +1,44 @@
+footer{
+    background-color: rgb(27, 27, 27);
+    bottom: 0px;
+    text-align: center;
+    left: 0;
+    bottom: 0;
+    height: 300px;
+    width: 100%;
+    padding-top:+20px;
+    padding-bottom: +40px;
+
+}
+
+footer>div{
+    display: flex;
+    justify-content: center;
+    align-content:center;
+    height: 40px;
+
+}
+
+footer>div>div{
+    flex: 1;
+    padding: 20px;
+}
+
+.text-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.icona {
+    font-size: 20px; 
+    transition: transform 0.3s ease, font-size 0.3s ease, color 0.3s ease;
+}
+
+.icona:hover {
+    transform: scale(1.2); 
+    color: #007bff; 
+}
+
+      
