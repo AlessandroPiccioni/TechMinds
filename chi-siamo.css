@@ -17,33 +17,6 @@ body{
     height: 100vh;
 }
 
-.header-container {
-    background-color: #003A89;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    /*allinea gli elementi della stessa gerarchia in modo flessibile */
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    border-bottom: 1px solid white;
-    margin-bottom: 100px;
-}
-
-.header-container-left {
-    display: flex;
-    align-items: center;
-    /*Aggiunge uno spazio di 20px tra gli elementi della stessa gerarchia*/
-    gap: 20px;
-}
-
-.header-container-right {
-    display: flex;
-    align-items: center;
-    gap: 0.5px;
-}
-
 
 .logo {
     width: 100px;
@@ -191,44 +164,3 @@ p>a{
     color: aqua;
 }
 
-footer{
-    background-color: rgb(27, 27, 27);
-    bottom: 0px;
-    text-align: center;
-    left: 0;
-    bottom: 0;
-    height: 100px;
-    width: 100%;
-    min-height: calc(100vh+100000px);
-}
-
-footer>div{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-content: center;
-    height: 80px;
-
-}
-
-footer>div>div{
-    flex: 1;
-    padding: 20px;
-}
-
-.text-container{
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    gap: 15px;
-}
-
-.icona {
-    font-size: 20px; 
-    transition: transform 0.3s ease, font-size 0.3s ease, color 0.3s ease;
-}
-
-.icona:hover {
-    transform: scale(1.2); 
-    color: #007bff; 
-}
