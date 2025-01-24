@@ -53,8 +53,8 @@ button {
 }
 
 .imgBanner {
-    width: 350px;     
-    height: 350px;   
+    width: 900px;     
+    height: 900px;   
     border-radius: 50%; 
     /* mantiene le proporzioni*/
     object-fit: cover; 
